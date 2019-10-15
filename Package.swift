@@ -5,6 +5,10 @@ import PackageDescription
 
 let package = Package(
     name: "swiftui-previews",
+    platforms: [
+        .macOS(.v10_15),
+        .iOS(.v13)
+    ],
     products: [
         // Products define the executables and libraries produced by a package, and make them visible to other packages.
         .library(
@@ -24,5 +28,6 @@ let package = Package(
         .testTarget(
             name: "swiftui-previewsTests",
             dependencies: ["swiftui-previews"]),
-    ]
+    ],
+    swiftLanguageVersions: [.v5]
 )
