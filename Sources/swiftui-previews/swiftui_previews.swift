@@ -24,8 +24,6 @@ struct NSViewControllerPreview<ViewController: NSViewController>: NSViewControll
 
 #endif
 
-import Cocoa
-
 #if canImport(SwiftUI) && canImport(Cocoa) && DEBUG
 
 import Cocoa
